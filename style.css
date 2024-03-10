@@ -1,0 +1,129 @@
+:root {
+    :root {
+        --color1: #001219;
+        --color2: #005f73;
+        --color3: #3d9397;
+        --color4: #94d28d;
+        --color5: #e9d8a6;
+        --color6: #ee9800;
+        --color7: #ca6702;
+        --color8: #bb3e03;
+        --color9: #ae2012;
+        --color10: #9b2226;
+    }
+
+    /* color defined now use anywhere
+    other things also define instead of colors */
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* 0 from top and auto from left and right */
+    padding: 0 1rem;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* 1rem = 16px */
+    /* advantage of rem instead of px if rem apply on parent all child accept it */
+}
+
+section h2 {
+    font-size: 2.5rem;
+}
+
+section ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+figure {
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    max-height: 400px;
+    position: relative;
+    /*  */
+    overflow: hidden;
+    /* to keep the img inside stop scroll */
+    border-width: 10px;
+    border-style: solid;
+    /* or border: 10px solid */
+    border-radius: 5px;
+}
+
+figure img {
+    /* margin-bottom: -4px; */
+    width: 100%;
+    object-fit: cover;
+    /* to stretch a big pic which we give small width */
+    object-position: 0 -150px;
+    /* 0 on x axis 150 on y */
+}
+
+figcaption {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.875rem;
+}
+
+/* relative : to bound an element inside a box */
+/* absolute: to move around the element */
+/* body is by default relative */
+
+figcaption a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    /* to erase the underline */
+    color: var(--color1);
+    /* var=variable */
+}
+
+.color7,
+.color7 a:hover {
+
+    border-color: var(--color7);
+    color: var(--color7);
+}
+
+/* hover: when cursor on element it is called hover or in mobile when we touch it*/
+/* apply same on all 8 colors  */
+
+.color2,
+.color2 a:hover {
+    border-color: var(--color2);
+    color: var(--color2);
+}
+
+.color6,
+.color6 a:hover {
+    border-color: var(--color6);
+    color: var(--color6);
+}
+
+.color9,
+.color9 a:hover {
+    border-color: var(--color9);
+    color: var(--color9);
+}
+
+.color4,
+.color4 a:hover {
+    border-color: var(--color4);
+    color: var(--color4);
+}
+
+.color3,
+.color3 a:hover {
+    border-color: var(--color3);
+    color: var(--color3);
+}
