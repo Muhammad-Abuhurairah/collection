@@ -29,6 +29,10 @@
         flex-basis: 49.5%;
     }
 
+    footer address{
+        margin-top: 0;
+    }
+
     .missiontext{
         display: flow-root;
         max-width: 900px;
@@ -75,8 +79,15 @@
         flex-basis: 32.5%;
     }
 
-    address {
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    
+    footer address {
         flex-basis: 65.5%;
+        margin-top: 0px;
     }
     nav ul {
         justify-content: flex-end;
@@ -109,6 +120,24 @@
         object-position: 0 -350px;
     }
     /* object-position is positioning on x and y axis x is correct so set to 0 and y for upward dir negative value */
+
+    header{
+        padding: 1rem;
+    }
+    header nav li{
+        flex-basis: auto;
+        margin-bottom: 0;
+        margin: 0px 10px;
+        gap: 1.2rem;
+    }
+    header a{
+        background-color: transparent;
+        text-decoration: none;
+        color: black;
+    }
+    .mobile{
+        display: none;
+    }
 }
 
 @media (max-width: 550px){

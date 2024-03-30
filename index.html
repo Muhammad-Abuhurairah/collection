@@ -7,8 +7,8 @@
     <title>Collections</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
     <header class="header">
         <nav class="mobile">
@@ -19,7 +19,7 @@
                 <li><a href="">Contact</a></li>
                 <li><a href="">Donate</a></li>
             </ul> -->
-            <ul class="button">   
+            <ul class="button">
                 <li><button><a href="">Collection</a></button></li>
                 <li><button><a href="">About</a></button></li>
                 <li><button><a href="">Contact</a></button></li>
@@ -44,7 +44,13 @@
     </header>
     <main>
         <section id="hero">
-            <img src="./assets/hero-1200.png" alt="">
+            <picture>
+                <source srcset="./assets/hero-838.png" media="(min-width: 301px)">
+                <img src="./assets/hero-300.png" alt="">
+                <!-- <img src="./assets/hero-838.png" alt="">
+                <img src="./assets/hero-1200.png" alt=""> -->
+<!-- img tag is always in end after sources -->
+            </picture>
         </section>
         <section id="mission">
             <h2>Our Mission</h2>
@@ -66,19 +72,19 @@
             <section id="popular">
                 <h2>Popular Prints</h2>
                 <ul>
-                    <li>
+                    <li data-aos="flip-left" data-aos-duration="2000">
                         <figure class="color9">
                             <img src="./assets/fork-it-up.jpg" alt="fork-it-up">
                             <figcaption><a href="">Fork It Up</a></figcaption>
                         </figure>
                     </li>
-                    <li>
+                    <li  data-aos="zoom-in" data-aos-duration="2000">
                         <figure class="color4">
                             <img src="./assets/eyeing-you.jpg" alt="eyeing-you">
                             <figcaption><a href="">Eyeing You</a></figcaption>
                         </figure>
                     </li>
-                    <li class="tablet-card3">
+                    <li class="tablet-card3" data-aos="flip-right" data-aos-duration="2000">
                         <figure class="color3">
                             <img src="./assets/lets-scoot.jpg" alt="lets-scoot">
                             <figcaption><a href="">Let's Scoot</a></figcaption>
@@ -90,8 +96,8 @@
         <section id="featured">
             <h2>Featured Print</h2>
 
-            <figure class="color6">
-            <img src="./assets/too-cool-300.jpg" alt="">
+            <figure class="color6" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="./assets/too-cool-300.jpg" alt="">
                 <figcaption><a href="#">Too Cool for School</a></figcaption>
             </figure>
         </section>
@@ -99,37 +105,37 @@
         <section id="collections">
             <h2>Collections</h2>
             <ul>
-                <li>
+                <li data-aos="fade-down-right" data-aos-duration="3000">
                     <figure class="color7">
                         <img src="./assets/pop-art.jpg" alt="pop art">
                         <figcaption><a href="">Pop Art</a></figcaption>
                     </figure>
                 </li>
-                <li>
+                <li data-aos="fade-down" data-aos-duration="3000">
                     <figure class="color2">
                         <img src="./assets/abstract.jpg" alt="abstract">
                         <figcaption><a href="">Abstract</a></figcaption>
                     </figure>
                 </li>
-                <li>
+                <li data-aos="fade-down-left" data-aos-duration="3000">
                     <figure class="color6">
                         <img src="./assets/vivid.jpg" alt="vivid">
                         <figcaption><a href="">Vivid</a></figcaption>
                     </figure>
                 </li>
-                <li>
+                <li data-aos="fade-up-right" data-aos-duration="3000">
                     <figure class="color9">
                         <img src="./assets/music.jpg" alt="music">
                         <figcaption><a href="">Music</a></figcaption>
                     </figure>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-duration="3000">
                     <figure class="color4">
                         <img src="./assets/vehicles.jpg" alt="vehicles">
                         <figcaption><a href="">Vehicles</a></figcaption>
                     </figure>
                 </li>
-                <li>
+                <li data-aos="fade-up-left" data-aos-duration="3000">
                     <figure class="color3">
                         <img src="./assets/landscape.jpg" alt="landscape">
                         <figcaption><a href="">Landscape</a></figcaption>
@@ -163,6 +169,12 @@
             </address>
         </footer>
     </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+      </script>
+
 </body>
 
 </html>
